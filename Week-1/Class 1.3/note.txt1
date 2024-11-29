@@ -1,0 +1,61 @@
+Question- What is string in js?
+Answer- A JavaScript string stores a series of characters like "John Doe". A string can be any text inside double
+or single quotes.
+
+
+
+
+Question- What is array in js?
+Answer- An array is a special variable, which can hold more than one value may be of different datatype.
+
+
+
+
+Question- What is object in js?
+Answer- An object is a collection of properties, and a property is an association between a name (or key) and 
+a value.
+
+
+
+
+Question- What are classes and objects in js?
+Answer- Class is a blueprint that defines some properties and behaviors. An object is an instance of a class 
+that has those properties and behaviours attached. A class is not allocated memory when it is defined. An object 
+is allocated memory when it is created.
+
+
+
+
+Question- What is this keyword?
+Answer- “This” keyword refers to an object that is executing the current piece of code. It references the object 
+that is executing the current function.
+
+
+
+
+Question- What is static function?
+Answer- Static class methods are defined on the class itself. You cannot call a static method on an object, only 
+on an class.
+
+
+
+
+Question- What is JSON?
+Answer- JSON stands for JavaScript Object Notation. JSON is a text format for storing and transporting data.
+It is basically used to convert objects to strings or strings to objects.
+
+
+
+
+Question- Why JSON does not support functions?
+Answer- JSON doesn't support functions because functions are executable code, and JSON's purpose is to describe 
+data, not behavior. Functions are a part of the logic or behavior of a program and are not inherently representable
+in a data-interchange format like JSON.
+
+
+
+
+Question- What is shallow copy and deep copy?
+Answer- Shallow Copy stores the references of objects to the original memory address. Deep copy stores copies of 
+the object's value. Shallow Copy reflects changes made to the new/copied object in the original object. Deep copy 
+doesn't reflect changes made to the new/copied object in the original object.

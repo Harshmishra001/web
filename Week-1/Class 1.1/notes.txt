@@ -1,0 +1,77 @@
+Question- What is JavaScript?
+Answer- JavaScript is a lightweight, cross-platform, single-threaded, and interpreted programming 
+language. It is also known as the scripting language for webpages. It is well-known for the development of 
+web pages, and many non-browser environments also use it.
+
+
+
+
+Question- Why languages?
+Answer- Programming languages are used in web development because they enable humans to communicate 
+instructions to computers in a readable format.
+
+
+
+
+Question- Why javascript is better than other language?
+Answer- It is cross-platform compatible and is supported by all major web browsers. Both the front-end and 
+the back-end of websites may be developed using JavaScript, which, when done right, captures seamless 
+communication between the client and the server.
+
+
+
+
+Question- Why javascript is a dynamic language?
+Answer- Javascript is a dynamic typing language. When you declare a variable, you do not need to specify 
+what type this variable is. 
+
+
+
+
+Question- Explain single threaded nature of javascript?
+Answer- Javascript is a single threaded language. This means it has one call stack and one memory heap. 
+As expected, it executes code in order and must finish executing a piece code before moving onto the next.
+
+
+
+
+Question- What is compile-time and run-time?
+Answer- Compile-time refers to the phase during which a program is translated from the source code into 
+machine code or an intermediate code by a compiler. Whereas run-time, or execution time, is the period when 
+a program is actually running and performing its tasks on a computer.
+
+
+
+
+Question- What is difference between interpreted languages and compiled languages?
+Answer- Compiled languages-
+1. First need to compile, then need to run.
+2. Usually don't compile, if there is an error in the code.
+3. Eg- C, C++, Java etc.
+
+Interpreted languages-
+1. Usually go line by line.
+2. Can run partially if error comes later.
+3. Eg- Javascript, Python etc.
+
+
+
+
+Question- What is the difference between interpreter and compiler?
+Answer- A compiler translates code from a high-level programming language into machine code before the program runs. 
+An interpreter translates code written in a high-level programming language into machine code line-by-line as the 
+code runs.
+
+
+
+
+Question- What are variables in javascript?
+Answer- A JavaScript variable is simply a name of storage location. Three ways to create variables- let, var 
+and const.
+
+
+
+
+Question- What are datatypes in javascript?
+Answer- Datatypes describe the type of data that variables can store. Datatypes in javascript are integer, string,
+big int, boolean, null, undefined, object and symbol.

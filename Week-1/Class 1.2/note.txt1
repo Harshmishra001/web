@@ -1,0 +1,27 @@
+Question- What are functions?
+Answer- A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is 
+executed when "something" invokes it (calls it).
+
+
+
+
+Question- What are callback functions?
+Answer- Any function that is passed as an argument to another function so that it can be executed in that other 
+function is called as a callback function.
+
+
+
+
+Question- What is setTimeout function?
+Answer- setTimeout() takes a callback function as an argument and executes the callback function after a specified 
+amount of time. It takes two arguments: the first is the callback function to be executed, and the second is the 
+time delay in milliseconds before the callback is invoked.
+
+
+
+
+Question- What is setInterval function?
+Answer- The setInterval() method calls a function at specified intervals (in milliseconds). The setInterval() 
+method continues calling the function until clearInterval() is called, or the window is closed. It takes two 
+arguments: the first is the callback function to be executed, and the second is the time delay in milliseconds 
+after the callback is called again.
