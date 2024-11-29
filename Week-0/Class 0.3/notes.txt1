@@ -1,0 +1,30 @@
+Question- What is CSS?
+Answer- CSS stands for cascading style sheets.It is a style sheet language which is used to describe the look 
+and formatting of a document written in markup language. It provides an additional feature to HTML. It is 
+generally used with HTML to change the style of web pages and user interfaces.
+
+
+
+
+Question- What are the types of CSS?
+Answer- There are three types of CSS-
+
+1. Inline- In this 'style' attribute is used.
+            eg- <h1 style="border: 10px; height: auto;"> MY NAME IS MOHIT</h1>
+
+2. Internal- In this we use style tag inside head tag of html document.
+            eg- <style>
+                h1{
+                color: brown;
+                background-color: pink;
+                 }
+              </style>      
+
+3. External- In this we link html file with CSS.
+            eg-<link rel="stylesheet" href="style.css">
+
+
+
+
+Question- What is flexbox?
+Answer- CSS flexbox is used to provide 1-d layout.
