@@ -1,0 +1,49 @@
+Question- What is callback hell?
+Answer- The callback hell in JavaScript is referred to as a situation where an excessive amount of nested callback 
+functions are being executed. It reduces code readability and maintenance. Callback hell generally refers to an 
+ineffective way of writing code with asynchronous calls. It is also known as the Pyramid of Doom.
+
+
+
+
+Question- What are promises in js?
+Answer- JS promises are easy to manage when dealing with multiple asynchronous operations where callback can create 
+callback hell. A Promise is in one of these states:
+1. pending: initial state, neither fulfilled nor rejected.
+2. fulfilled: meaning that the operation was completed successfully.
+3. rejected: meaning that the operation failed.
+
+
+
+
+Question- What are async and await keywords?
+Answer- The keyword async before a function makes the function return a promise. Await function is used to wait for 
+the promise. It could be used within the async block only. It makes the code wait until the promise returns a 
+result. 
+
+
+
+
+Question- What is hoisting in js?
+Answer- Hoisting in JavaScript means that variable and function declarations are moved to the top of their scope 
+during the code execution, although initializations stay in their original place.
+Example 1- sayHello(); // "Hello!" but function expressions and arrow functions show error even if var is used
+          function sayHello() {
+          console.log("Hello!");
+          }
+
+Example 2- console.log(myVar); // undefined but let and const shows error
+          var myVar = 10;
+          console.log(myVar); // 10
+          
+          // This is essentially interpreted as:
+          var myVar; // Declaration is hoisted
+          console.log(myVar); // undefined
+          myVar = 10; // Initialization remains here
+          console.log(myVar); // 10
+ 
+
+
+
+Question- What are hof?
+Answer- Higher-order functions are that functions which take another function as an argument.

@@ -1,0 +1,31 @@
+Question- What are http requests?
+Answer- In an HTTP server, a client can make various types of requests to interact with the server and retrieve or 
+send data. The most common types of HTTP requests are:
+1. GET: Used to request data from a specified resource.
+2. POST: Used to send data to a server to create/update a resource.
+3. PUT: Similar to POST, but used to update a resource or create a new one if it doesn't exist.
+4. DELETE: Deletes the specified resource.
+
+
+
+
+Question- What is the difference between get and post request?
+Answer- GET Request:
+1. Usage: Used to request data from a specified resource.
+2. Data Handling: Sends data via the URL parameters (query string).
+3. Visibility: Parameters are visible in the URL.
+4. Security: Less secure for sensitive data as data is visible in the URL.
+5. Example of a GET request: https://example.com/api/products?id=123
+
+POST Request:
+1. Usage: Used to submit data to be processed to a specified resource.
+2. Data Handling: Sends data in the body of the HTTP request.
+3. Visibility: Data is not visible in the URL.
+4. Security: More secure for sensitive data as data is not visible in the URL.
+5. Example of a POST request: https://example.com/api/products   Body: { "id": 123 }
+
+
+
+
+Question- What does app listen mean?
+Answer- The app.listen() function starts the Express server and makes it listen on the specified port.
