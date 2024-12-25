@@ -157,3 +157,69 @@ Question- What is npm and npx?
 Answer- Npm means node package manager. It is a library. Npx is a tool that comes with npm (Node Package Manager), 
 starting from version 5.2.0. It stands for "Node Package Runner". npx makes it easy to execute packages from the npm 
 registry, either by running a specific package or by executing a package that hasn't been installed globally.
+
+
+
+**Easy Hinglish Version**  
+
+**Q: JavaScript aur ECMAScript mein kya difference hai?**  
+Ans: ECMAScript ek specification hai, jo scripting language ka standard define karta hai. JavaScript uska implementation hai, matlab ECMAScript ke rules ko follow karke banaya gaya actual language.  
+
+**Q: V8 engine kya hai?**  
+Ans: V8 Google ka JavaScript engine hai, jo C++ mein likha gaya hai. Ye JavaScript ko machine code mein compile karke fast execute karta hai.  
+
+**Q: SpiderMonkey engine kya hai?**  
+Ans: SpiderMonkey Mozilla ka JavaScript engine hai, jo Firefox mein JavaScript ko samajhne aur chalane ke liye use hota hai. Ye RUST mein likha gaya hai.  
+
+**Q: Node.js kya hai?**  
+Ans: Node.js ek JavaScript runtime hai, jo backend par JavaScript code chalane deta hai. Ye V8 engine par based hai aur C++ mein likha gaya hai. Ye DOM se related nahi hai.  
+
+**Q: Bun kya hai?**  
+Ans: Bun ek JavaScript runtime hai jo Node.js se tez hai. Ye Zig programming language mein likha gaya hai.  
+
+**Q: Client-Server architecture kya hota hai?**  
+Ans: Isme client request bhejta hai (headers, body, method ke sath), aur server response deta hai (status code aur data ke sath).  
+
+**Q: Protocol kya hai?**  
+Ans: Protocol ek set of rules hai jo data transmission ke liye follow kiye jaate hain.  
+
+**Q: HTTP kya hai?**  
+Ans: HTTP ek protocol hai jo frontend aur backend ke beech communication karne ke liye use hota hai.  
+
+**Q: HTTPS kya hai?**  
+Ans: HTTPS HTTP ka secure version hai, jo data transfer ko encrypt karta hai, jaise bank ya sensitive information ke liye.  
+
+**Q: HTTP server kya hota hai?**  
+Ans: HTTP server ek software hai jo client ke HTTP requests ko process karta hai aur web content provide karta hai.  
+
+**Q: Status code kya hota hai?**  
+Ans: HTTP status codes 3-digit numbers hote hain jo batate hain ki request success hui (2xx), client error (4xx), server error (5xx), ya redirect (3xx).  
+
+**Q: IP address aur domain name kya hai?**  
+Ans: IP address ek numeric label hai jo device ko identify karta hai. Domain name human-readable version hai, jaise "www.google.com".  
+
+**Q: Network kya hota hai?**  
+Ans: Network ek system hai jo multiple devices ko connect karta hai taaki information share ki ja sake.  
+
+**Q: Localhost kya hai?**  
+Ans: Localhost apne computer ko refer karta hai, jo local machine par running web apps ko dekhne ke liye use hota hai.  
+
+**Q: DNS kya hai?**  
+Ans: DNS (Domain Name System) domain names ko IP addresses mein convert karta hai.  
+
+**Q: Express.js kya hai?**  
+Ans: Express.js Node.js ka lightweight framework hai, jo web applications aur APIs banane ke liye use hota hai. Usko `require("express")` se load karte hain.  
+
+**Q: REST API kya hota hai?**  
+Ans: REST API ek architectural style hai jo HTTP ke sath client-server communication ke liye use hota hai. Ye stateless hota hai, matlab server client ke past requests ko yaad nahi rakhta.  
+
+**Q: Library aur Framework mein kya difference hai?**  
+Ans: Library tools jaise hote hain, jo aap apne hisaab se use karte ho. Framework ek structure deta hai, jo batata hai kaise kaam karna hai.  
+
+**Q: Port kya hai?**  
+Ans: Port ek endpoint hota hai jo server aur client ke beech data exchange ke liye use hota hai. Standard ports: 80 (HTTP), 443 (HTTPS).  
+
+**Q: NPM aur NPX kya hai?**  
+Ans:  
+- **NPM**: Node Package Manager, ek library hai jo packages manage karta hai.  
+- **NPX**: NPM ke sath aata hai (v5.2.0 ke baad). Ye bina globally install kare package run karne deta hai.  
