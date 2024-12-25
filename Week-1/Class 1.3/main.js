@@ -147,6 +147,8 @@ class Animal{
 const dog = new Animal("dog",4,"black")
 console.log(dog) //  { name: 'dog', legs: 4, color: 'black' }
 dog.speak()
+
+// console.log(dog.speak())
 Animal.print() // hi i am animal
 // dog.print() // it will show error as static class methods are defined on the class itself
 
@@ -233,7 +235,7 @@ let hasProp = obj.hasOwnProperty("key1");
 console.log(hasProp); // true it checks whether an object has a property with a specified name as its own property,
                       // rather than inherited from its prototype chain.
   
-let newObj = Object.assign({}, obj, { newProperty: "newValue" });
+let newObj = Object.assign( obj, { newProperty: "newValue" });
 console.log(newObj); // {key1: 'value1', key2: 'value2', key3: 'value3', newProperty: 'newValue'}
 }
 
