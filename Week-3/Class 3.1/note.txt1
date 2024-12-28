@@ -1,0 +1,33 @@
+Question- What are middlewares?
+Answer- In simple words, middleware in JavaScript, particularly in the context of web development with frameworks 
+like Express.js, is a function that runs between the request from the client and the response from the server. 
+Middleware functions can perform various tasks, such as logging requests, handling authentication, modifying request 
+or response objects, and more, before passing control to the next middleware function or the final request handler.
+
+
+
+
+Question- What are global catches?
+Answer- This is a middleware that catches errors not caught by other specific error-handling middleware. It's 
+typically defined as the last middleware in the chain and uses app.use with a function that has four parameters and 
+an error as its first parameter. Global catches or "error handlers" are like safety nets for your app. They're there 
+to catch any problems that sneak by and stop your app from crashing. They help by keeping your app running smoothly 
+even when unexpected errors show up. These catches make sure errors are handled in a way that won't disrupt your 
+users.
+
+
+
+
+Question- What is input validation?
+Answer- Input validation is a way of checking and ensuring that the data entered or provided by user meets certain 
+criteria or standards before it's processed or accepted by a system. It's an essential security and reliability 
+measure used in software development to prevent potentially harmful or incorrect data from causing issues within an 
+application.
+
+
+
+
+Question- What is zod?
+Answer- "Zod" refers to a library called "Zod" that is used for 'runtime checking' and validation of data structures. 
+It helps ensure that the data your application receives or processes adheres to a specific schema or structure, 
+thereby enhancing type safety and reducing runtime errors.

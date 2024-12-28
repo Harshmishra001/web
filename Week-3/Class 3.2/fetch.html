@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script> 
+let city="delhi"
+let url =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=63cb9f6f0482d7f61376edf323f1d739`;
+
+// FETCH API USING PROMISES
+function getweather1(){
+fetch(url,{
+        method: "GET"
+    }).then((data)=>{
+        return data.json()
+    }).then((result)=>{
+        console.log(result)})
+    }
+
+    
+
+
+// FETCH API USING AWAIT
+async function getweather2(){
+const response=await fetch (url, {
+    method:"GET"
+}) 
+const res= await response.json()    
+console.log(res)
+}
+
+
+
+
+// AXIOS 
+async function getweather3(){
+const response=await axios.get(url) 
+console.log(response.data)  
+}
+// function getweather3(){
+// axios.get(url)
+// .then((response)=>{
+//     const data=response.data
+//     console.log(data)
+// })
+// .catch((error)=>{
+//     console.log(error)
+// })
+// }
+
+    </script>
+    <button onclick="getweather1()">GET WEATHER 1</button>
+    <button onclick="getweather2()">GET WEATHER 2</button>
+    <button onclick="getweather3()">GET WEATHER 3</button>
+  
+</body>
+</html>
