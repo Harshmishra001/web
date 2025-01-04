@@ -1,0 +1,42 @@
+Question- What is react?
+Answer- ReactJS is an open-source JavaScript library used to create user interfaces in a declarative and efficient 
+way. For dynamic websites, these libraries make it easier to do DOM manipulation. React is just an easier way to 
+write normal HTML/CSS/JS. It’s a new syntax, that under the hood gets converted to HTML/CSS/JS using npm run build.
+
+Question- What is virtual dom?
+Answer- In React, the Virtual DOM is a lightweight copy of the Real DOM that helps make updates faster and more 
+efficient. When something in your app changes, React first updates the Virtual DOM instead of directly modifying the 
+Real DOM. It then compares the new Virtual DOM with the old version to see what has changed. Once it finds the 
+differences, React only updates those specific parts of the Real DOM, instead of reloading the entire page or large 
+sections of it. This process significantly improves performance because updating the Real DOM directly is slow and 
+can make the app laggy with frequent changes. By using the Virtual DOM, React ensures smoother and quicker updates 
+to the user interface.
+
+
+
+
+Question- What is state, components and re-rendering in react?
+Answer- State is an object that holds information about the current status of the app, like the value of a counter, 
+which can change over time. Components are self-contained, reusable pieces of code that work like JavaScript 
+functions but return HTML. The Button component, for example, takes the state (count) as an input and updates how it 
+looks based on that state. Re-rendering in React refers to the process of updating the visual representation of a 
+component in response to changes in its state or props, ensuring the user interface reflects the latest data.
+
+In React, when the state changes, React automatically re-renders the component to reflect that change. This way, 
+your users always see the most up-to-date and accurate information on the screen.
+
+
+
+
+Question- What is jsx?
+Answer- JSX (JavaScript XML) is a syntax extension for JavaScript used with React, allowing developers to write 
+HTML-like code in their JavaScript files.
+
+
+
+
+Question- What are props?
+Answer- In React, props (short for properties) are a way to pass data from a parent component to a child component. 
+They allow you to customize and configure child components based on values provided by their parent components. 
+Props in React are read-only. A child component cannot modify the props it receives from a parent. Props are 
+intended to be immutable.
