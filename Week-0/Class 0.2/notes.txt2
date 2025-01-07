@@ -124,3 +124,111 @@ Question- What are meta tags?
 Answer- Meta tags are HTML tags used to provide additional information about a page to search engines and other 
 clients. <meta> tags always go inside the <head> element, and are typically used to specify character set, page 
 description, keywords, author of the document, and viewport settings.
+
+
+
+
+
+Here is the same information translated into Hinglish (a mix of Hindi and English):
+
+---
+
+**Question- What are browsers?**  
+**Answer**- Browser ek type ka software hota hai jo aapko websites dhundhne aur dekhne mein madad karta hai. Bahut saare different web browsers hote hain, lekin kuch common ones hain jaise Google Chrome, Safari, aur Mozilla Firefox.
+
+---
+
+**Question- How do browsers render websites?**  
+**Answer**- Browser HTML page ko line by line process karna shuru karta hai, page ke beginning se lekar end tak. Ye page ke content ko dikhane ke liye <body> tag ke andar placed HTML tags ko render karta hai.
+
+---
+
+**Question- What purpose do HTML, CSS, and JS serve?**  
+**Answer**- HTML, CSS, aur JavaScript teen important “front end” languages hain. Inka har ek ka specific use hota hai, aur teeno websites design karne mein use kiye jaate hain. Ye form, function, aur style ko define karte hain.
+
+---
+
+**Question- What is the internet?**  
+**Answer**- Internet ek vast network hai jo duniya bhar ke computers ko connect karta hai.
+
+---
+
+**Question- What are websites and webpages?**  
+**Answer**- Website ek collection hoti hai kai web pages ki, aur web pages wo digital files hote hain jo HTML (HyperText Markup Language) se likhe jaate hain.
+
+---
+
+**Question- What is a domain name?**  
+**Answer**- Domain name aapke website ka address hota hai. Ek domain name unique hota hai aur doosri websites ke saath share nahi kiya jaa sakta. Jaise example Facebook.com.
+
+---
+
+**Question- What is a URL?**  
+**Answer**- URL ek web address ki tarah hota hai. Ye aapke computer ko bataata hai ki internet par kuch kaise dhoondhna hai.
+
+---
+
+**Question- What is the difference between a URL and a domain name?**  
+**Answer**- URL (Uniform Resource Locator) ko web address bhi kaha jaata hai. Ye domain name ke saath additional information bhi contain karta hai, jaise protocol aur path. Example ke liye, URL ‘https://cloudflare.com/learning/’ mein, ‘cloudflare.com’ domain name hai, ‘https’ protocol hai, aur ‘/learning/’ path ya route hai jo specific page tak le jaata hai.
+
+---
+
+**Question- What are the parts of a domain name?**  
+**Answer**- Domain name generally teen parts mein divided hota hai aur har part ek dot se separated hota hai:  
+1. Subdomain ya third-level domain, jaise www  
+2. Second-Level Domain (SLD), jo website ka naam hota hai  
+3. Top-Level Domain (TLD), jaise .com  
+
+---
+
+**Question- What is a route?**  
+**Answer**- Route ek specific endpoint ya URL hota hai web application ya server mein. Routes define karte hain ki application client requests kaise handle karega specific resources ya functionalities ke liye.
+
+---
+
+**Question- What is a web crawler?**  
+**Answer**- Web Crawler ek bot hota hai jo internet se content download karta hai aur index karta hai. Iska main purpose hota hai alag-alag web pages ke baare mein jaana. Ye bots zyada tar search engines dwara operate kiye jaate hain.
+
+---
+
+**Question- What is the difference between frontend and backend?**  
+**Answer**- Frontend wo hota hai jo users dekhte hain aur interact karte hain, jabki backend wo behind-the-scenes part hota hai jo data, logic aur server operations ko manage karta hai.
+
+---
+
+**Question- What is HTML?**  
+**Answer**- HTML ka full form hai Hyper Text Markup Language. HTML ek standard markup language hai jo web pages banane ke liye use hoti hai. HTML ek web page ki structure ko describe karta hai. HTML elements browser ko batate hain ki content ko kaise display karna hai.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+</body>
+</html>
+```
+
+- `<!DOCTYPE html>` declare karta hai ki ye document ek HTML5 document hai.  
+- `<html>` element HTML page ka root element hai aur language English hai.  
+- `<head>` element HTML page ke meta information ko contain karta hai.  
+- `<meta charset="UTF-8">` page ka character encoding define karta hai. UTF-8 Unicode Transformation Format hai jo unicode characters ko unique binary string mein convert karta hai aur vice versa.  
+- `<title>` element page ka title specify karta hai (jo browser ke title bar ya tab mein dikhai deta hai).  
+- `<body>` element document ka body define karta hai, jo visible content ko contain karta hai, jaise headings, paragraphs, images, hyperlinks, tables, lists, etc.
+
+---
+
+**Question- What are HTML tags and attributes?**  
+**Answer**- HTML tags wo hote hain jo HTML element ko hold karte hain. HTML element content ko hold karta hai. HTML attributes wo hote hain jo HTML element ke characteristics ko detail mein describe karte hain. HTML tag `<` se start hota hai aur `>` se end hota hai. Jo bhi HTML tag ke andar likha hota hai, wo HTML element hota hai.
+
+---
+
+**Question- What are meta tags?**  
+**Answer**- Meta tags wo HTML tags hote hain jo page ke baare mein additional information provide karte hain search engines aur doosre clients ko. `<meta>` tags hamesha `<head>` element ke andar hote hain aur ye generally character set, page description, keywords, author of the document, aur viewport settings specify karte hain.
+
+--- 
+
+Let me know if you need any further explanations!
