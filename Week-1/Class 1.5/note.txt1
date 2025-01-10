@@ -40,3 +40,62 @@ time-consuming operations seamlessly.
 
 Question- What are web APIs?
 Answer- These are environments where JavaScript code runs, providing functionalities beyond the language itself.
+
+
+
+
+
+
+
+
+
+
+Here’s a Hinglish explanation for your questions:
+
+---
+
+**Question- What is the difference between synchronous and asynchronous functions?**  
+**Answer**-  
+- **Synchronous** ka matlab hai ki code ek sequence mein execute hota hai. Har statement ko ek ke baad ek execute hona padta hai. Matlab, ek statement ko dusre statement ke complete hone ka wait karna padta hai.  
+- **Asynchronous** mein, operations parallel execute hote hain. Matlab, jab ek operation chal raha hota hai, tab dusra operation bhi chal sakta hai. Asynchronous functions Web APIs pe run karte hain, jahan pe operations parallel execute hote hain.
+
+---
+
+**Question- What is `fs.readFile` function?**  
+**Answer**-  
+`fs.readFile()` ek built-in method hai jo file ko read karne ke liye use hota hai. Pehle aapko `fs` module ko load karna padta hai `require()` method se. Example:  
+```javascript
+const fs = require("fs");
+```
+Syntax:  
+```javascript
+fs.readFile(filename, encoding, callback_function);
+```
+- **Encoding** ka default format **Buffer** hota hai, jo machine-readable hota hai. Agar human-readable chahiye, toh aap **utf-8** encoding use karte hain.
+- Agar `fs` module globally available nahi hai, toh aap terminal mein `npm i fs` command run kar sakte hain.
+
+---
+
+**Question- Who handles JS asynchronous code?**  
+**Answer**-  
+JavaScript ka asynchronous code **libuv** handle karta hai, jo ek C++ library hai aur **Node.js** mein use hota hai. Yeh I/O operations handle karta hai lekin **CPU-intensive tasks** ke liye nahi hota.
+
+---
+
+**Question- Describe JS browser architecture?**  
+**Answer**-  
+- Jab **synchronous code** run hota hai, functions ek ke baad ek **call stack** mein add hote hain aur main thread ko block karte hain jab tak woh complete nahi hote.
+- **Asynchronous operations** (jaise `setTimeout`, `fetch`) alag tareeke se kaam karte hain. Yeh directly execute nahi hote, unhe **Web/Node APIs** ko delegate kiya jata hai. Isse synchronous code continue kar pata hai bina wait kiye.
+- Yeh APIs apna kaam external tarike se handle karte hain, aur jab operation complete hota hai, uska **callback** **callback queue** mein dal diya jata hai.
+- **Event loop** call stack aur callback queue ko continuously monitor karta hai. Jab call stack khali hota hai, tab event loop callback queue se callbacks ko call stack mein le aata hai aur execute karta hai.
+- Yeh mechanism JavaScript ko synchronous aur asynchronous tasks efficiently manage karne mein madad karta hai, taki application responsive rahe aur time-consuming operations seamlessly handle ho sake.
+
+---
+
+**Question- What are Web APIs?**  
+**Answer**-  
+**Web APIs** wo environments hain jahan JavaScript ka code run hota hai. Yeh functionalities provide karte hain jo language ke basic features se zyada hote hain. Matlab, JavaScript ke code ko browser ke features jaise DOM manipulation, events, AJAX, etc. ka access milta hai, jise Web APIs kehte hain.
+
+---
+
+I hope this helps! Let me know if you need further clarification!

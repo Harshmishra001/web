@@ -59,3 +59,62 @@ Question- What is shallow copy and deep copy?
 Answer- Shallow Copy stores the references of objects to the original memory address. Deep copy stores copies of 
 the object's value. Shallow Copy reflects changes made to the new/copied object in the original object. Deep copy 
 doesn't reflect changes made to the new/copied object in the original object.
+
+
+
+
+
+
+
+Here’s the explanation in Hinglish (a mix of Hindi and English):
+
+---
+
+**Question- What is string in JS?**  
+**Answer**- JavaScript mein string ek aisi data type hoti hai jo characters ki series ko store karti hai, jaise "John Doe". String koi bhi text ho sakti hai jo double ya single quotes ke andar likha ho.
+
+---
+
+**Question- What is array in JS?**  
+**Answer**- Array ek special variable hai jo ek se zyada values ko store kar sakta hai. Yeh values alag-alag data types ki bhi ho sakti hain.
+
+---
+
+**Question- What is object in JS?**  
+**Answer**- Object ek collection hota hai properties ka, aur har property ka ek name (ya key) aur value hoti hai. Matlab, object kisi cheez ke attributes ko define karta hai.
+
+---
+
+**Question- What are classes and objects in JS?**  
+**Answer**- Class ek blueprint hoti hai jo kuch properties aur behaviors ko define karti hai. Object ek instance hota hai class ka, jisme woh properties aur behaviors hote hain jo class ne define kiye hain. Jab class define hoti hai, tab usse memory allocate nahi hoti, lekin jab object create hota hai, tab usko memory allocate hoti hai.
+
+---
+
+**Question- What is `this` keyword?**  
+**Answer**- `This` keyword us object ko refer karta hai jo current code ko execute kar raha hai. Matlab, jab aap kisi function ke andar `this` use karte ho, toh woh us object ko point karta hai jo function ko call kar raha hai.
+
+---
+
+**Question- What is static function?**  
+**Answer**- Static class methods wo methods hote hain jo class pe directly define hote hain. Aap static method ko object pe call nahi kar sakte, bas class pe hi call kar sakte hain.
+
+---
+
+**Question- What is JSON?**  
+**Answer**- JSON ka full form hai JavaScript Object Notation. JSON ek text format hota hai jo data ko store aur transport karne ke liye use hota hai. Yeh basically objects ko strings mein convert karta hai ya strings ko objects mein convert karta hai.
+
+---
+
+**Question- Why JSON does not support functions?**  
+**Answer**- JSON functions ko support nahi karta kyunki functions executable code hote hain, aur JSON ka purpose sirf data ko describe karna hai, na ki program ka behavior. Functions program ke logic ka part hote hain, jo data-interchange format mein represent nahi kiye ja sakte.
+
+---
+
+**Question- What is shallow copy and deep copy?**  
+**Answer**-  
+- **Shallow Copy**: Shallow copy mein objects ke references ko original memory address tak store kiya jata hai. Matlab, agar aap copied object mein koi changes karte hain, toh woh changes original object mein bhi reflect hote hain.
+- **Deep Copy**: Deep copy mein object ke values ko copy kiya jata hai, na ki references ko. Matlab, agar aap copied object mein changes karte ho, toh woh changes original object mein reflect nahi hote.
+
+---
+
+Let me know if you need more clarifications!

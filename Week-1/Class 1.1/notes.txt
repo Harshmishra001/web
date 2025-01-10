@@ -75,3 +75,79 @@ and const.
 Question- What are datatypes in javascript?
 Answer- Datatypes describe the type of data that variables can store. Datatypes in javascript are integer, string,
 big int, boolean, null, undefined, object and symbol.
+
+
+
+
+
+
+
+
+
+
+
+
+Here’s the same information in Hinglish (a mix of Hindi and English):
+
+---
+
+**Question- What is JavaScript?**  
+**Answer**- JavaScript ek lightweight, cross-platform, single-threaded, aur interpreted programming language hai. Isay webpages ke liye scripting language bhi kaha jaata hai. Yeh web pages ke development ke liye kaafi jaana jaata hai, aur bahut saare non-browser environments bhi isay use karte hain.
+
+---
+
+**Question- Why languages?**  
+**Answer**- Programming languages web development mein use hoti hain kyunki yeh humans ko computers ko readable format mein instructions dene mein madad karti hain.
+
+---
+
+**Question- Why JavaScript is better than other languages?**  
+**Answer**- JavaScript cross-platform compatible hai aur sabhi major web browsers dwara supported hai. Websites ka frontend aur backend dono JavaScript se develop kiye jaa sakte hain, aur agar sahi tarike se kiya jaye, toh client aur server ke beech seamless communication ho sakta hai.
+
+---
+
+**Question- Why JavaScript is a dynamic language?**  
+**Answer**- JavaScript ek dynamic typing language hai. Jab aap ek variable declare karte ho, toh aapko ye specify karne ki zaroorat nahi hoti ki wo variable kis type ka hoga.
+
+---
+
+**Question- Explain single-threaded nature of JavaScript?**  
+**Answer**- JavaScript ek single-threaded language hai. Matlab ismein ek call stack aur ek memory heap hota hai. Jaise ki expected hai, yeh code ko order mein execute karta hai aur ek piece of code ko execute karne ke baad hi agla code execute karne ki taraf move karta hai.
+
+---
+
+**Question- What is compile-time and run-time?**  
+**Answer**- Compile-time wo phase hota hai jab program ko source code se machine code ya intermediate code mein convert kiya jaata hai compiler ke through. Run-time, ya execution time, wo time hota hai jab program actual mein run ho raha hota hai aur apne tasks ko computer par perform kar raha hota hai.
+
+---
+
+**Question- What is the difference between interpreted languages and compiled languages?**  
+**Answer**  
+**Compiled languages:**
+1. Sabse pehle compile karna padta hai, fir run karte hain.  
+2. Agar code mein koi error hota hai, toh usually woh compile nahi hota.  
+3. Example: C, C++, Java etc.
+
+**Interpreted languages:**
+1. Line by line execute hoti hain.  
+2. Agar error aata hai toh code partially bhi run ho sakta hai.  
+3. Example: JavaScript, Python etc.
+
+---
+
+**Question- What is the difference between interpreter and compiler?**  
+**Answer**- Compiler code ko high-level programming language se machine code mein convert karta hai, lekin program run hone se pehle. Interpreter code ko high-level programming language se machine code mein line-by-line convert karta hai jab program run ho raha hota hai.
+
+---
+
+**Question- What are variables in JavaScript?**  
+**Answer**- JavaScript mein variable ek storage location ka naam hota hai. Variable banane ke teen tareeke hain: `let`, `var`, aur `const`.
+
+---
+
+**Question- What are datatypes in JavaScript?**  
+**Answer**- Datatypes wo describe karte hain ki variables kis type ka data store kar sakte hain. JavaScript mein datatypes hain: integer, string, big int, boolean, null, undefined, object, aur symbol.
+
+---
+
+Let me know if you need more details!

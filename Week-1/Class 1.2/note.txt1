@@ -25,3 +25,37 @@ Answer- The setInterval() method calls a function at specified intervals (in mil
 method continues calling the function until clearInterval() is called, or the window is closed. It takes two 
 arguments: the first is the callback function to be executed, and the second is the time delay in milliseconds 
 after the callback is called again.
+
+
+
+
+
+
+
+
+
+Here’s the information in Hinglish:
+
+---
+
+**Question- What are functions?**  
+**Answer**- JavaScript function ek code ka block hota hai jo kisi specific task ko perform karne ke liye design kiya jata hai. Ek JavaScript function tab execute hota hai jab "kuch" usse invoke (call) karta hai.
+
+---
+
+**Question- What are callback functions?**  
+**Answer**- Callback function wo function hota hai jo kisi aur function ko argument ke roop mein pass kiya jaata hai, taaki woh uss dusre function ke andar execute ho sake.
+
+---
+
+**Question- What is setTimeout function?**  
+**Answer**- `setTimeout()` ek callback function ko argument ke roop mein leta hai aur usse specified time ke baad execute karta hai. Isme do arguments hote hain: pehla argument wo callback function hota hai jo execute hona hota hai, aur doosra argument time delay hota hai milliseconds mein, jo batata hai ki callback function ko kitni der baad invoke karna hai.
+
+---
+
+**Question- What is setInterval function?**  
+**Answer**- `setInterval()` method ek function ko specified intervals (milliseconds mein) pe call karta hai. Yeh method function ko tab tak call karta rehta hai jab tak `clearInterval()` call nahi hota, ya window band nahi hota. Isme bhi do arguments hote hain: pehla argument wo callback function hota hai jo execute hona hota hai, aur doosra argument time delay hota hai milliseconds mein, jo batata hai ki callback function ko agle call ke liye kitni der baad execute karna hai.
+
+---
+
+Let me know if you need more clarification!

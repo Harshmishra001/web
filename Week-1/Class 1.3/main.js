@@ -10,7 +10,7 @@ console.log(str.includes("vir")) // true
 console.log(str.slice(0,5)) // my na because it will not include last index
 console.log(str.slice(5,0)) // it will not work
 console.log(str.substring(5,0)) // my na
-console.log(str.substring(2,5)) // my na
+console.log(str.substring(2,5)) // na
 
 for(let ab of str){
     console.log(ab) // print entire string character by character
@@ -29,7 +29,7 @@ if(str.indexOf("is")){
 let a = "hello hello hello"
 console.log(a.indexOf("hello")) // 0
 console.log(a.lastIndexOf("hello")) // 12
-console.log(a.substr(2,5)) // llo h it starts from 0th index and prints 5 characters
+console.log(a.substr(2,5)) // llo h    it starts from 2th index and prints 5 characters
 console.log(a.replace("hello", "mohit")) // mohit hello hello
 console.log(a.split(" ")) // [ 'hello', 'hello', 'hello' ]  space k around split kr dega 
 
@@ -74,7 +74,7 @@ console.log(arr.concat(arrr)) // [4, 2, 3, 4, 5, 5, 6]
 console.log(arr) // [ 4, 2, 3, 4 ] no change in original array 
 
 arr[0]=3
-console.log(arr) // [ 3, 2, 3, 4 ] arrays are not immutable
+console.log(arr) // [ 3, 2, 3, 4 ] arrays are mutable
 
 for(let items of arr){
     console.log(items) // 3 2 3 4 line by line
@@ -219,6 +219,9 @@ console.log(squareRoot); // 2.1354156504062622
 
 
 // OBJECTS IN JS
+
+objectMethods(sampleObject);
+
 function objectMethods(obj) {
 console.log(obj); // { key1: 'value1', key2: 'value2', key3: 'value3' }
   
@@ -248,7 +251,7 @@ const sampleObject = {
 };
 
 
-objectMethods(sampleObject);
+
 
 
 
