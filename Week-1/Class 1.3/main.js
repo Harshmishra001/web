@@ -9,8 +9,19 @@ console.log(str.indexOf("virat")) // 11, it is does not find any index then it g
 console.log(str.includes("vir")) // true
 console.log(str.slice(0,5)) // my na because it will not include last index
 console.log(str.slice(5,0)) // it will not work
+
+
 console.log(str.substring(5,0)) // my na
 console.log(str.substring(2,5)) // na
+// 1. console.log(str.substring(5, 0)); // my na
+// In this case, the substring(5, 0) will be treated as substring(0, 5) because substring() swaps the indices if startIndex is greater than endIndex.
+// So, str.substring(0, 5) extracts the substring from index 0 to index 5 (not including index 5).
+// Result: "my na"
+// 2. console.log(str.substring(2, 5)); // na
+// Here, str.substring(2, 5) extracts characters from index 2 up to but not including index 5.
+// Result: " na" (Note the leading space because the character at index 2 is " ").
+
+
 
 for(let ab of str){
     console.log(ab) // print entire string character by character
@@ -18,6 +29,7 @@ for(let ab of str){
 
 str[1]="i"
 console.log(str) // my name is virat dogra it will not change because strings in js are immutable
+
 
 if(str.indexOf("my")){
     console.log("hello") // do not print it because index of my is 0
@@ -29,7 +41,9 @@ if(str.indexOf("is")){
 let a = "hello hello hello"
 console.log(a.indexOf("hello")) // 0
 console.log(a.lastIndexOf("hello")) // 12
+
 console.log(a.substr(2,5)) // llo h    it starts from 2th index and prints 5 characters
+
 console.log(a.replace("hello", "mohit")) // mohit hello hello
 console.log(a.split(" ")) // [ 'hello', 'hello', 'hello' ]  space k around split kr dega 
 
@@ -71,7 +85,7 @@ console.log(arr) // [ 4, 2, 3, 4 ] add element at the start of array
 
 const arrr=[5,5,6]
 console.log(arr.concat(arrr)) // [4, 2, 3, 4, 5, 5, 6]
-console.log(arr) // [ 4, 2, 3, 4 ] no change in original array 
+console.log(arr) // * [ 4, 2, 3, 4 ] no change in original array 
 
 arr[0]=3
 console.log(arr) // [ 3, 2, 3, 4 ] arrays are mutable
@@ -79,6 +93,7 @@ console.log(arr) // [ 3, 2, 3, 4 ] arrays are mutable
 for(let items of arr){
     console.log(items) // 3 2 3 4 line by line
 }
+
 
 const arrrr=[1,2,3,4,5,6,7,8]
 console.log(arrrr.push(11)) // 9 length of arrrr after pushing 11
@@ -96,12 +111,12 @@ console.log(mohit.length) // 6 as length remains same
 
 const nitin=[2,3,4,5,6]
 console.log(nitin.splice(0,3)) // [ 2, 3, 4 ] as not include index = 3
-console.log(nitin) // [5,6] 
+console.log(nitin) //* [5,6] 
 console.log(nitin.length) // 2
 
 let nitin1=[1,2,3,4]
 console.log(nitin1.slice(0,3)) // [ 1, 2, 3 ]
-console.log(nitin1) // [ 1, 2, 3, 4 ]
+console.log(nitin1) // *[ 1, 2, 3, 4 ]
 console.log(nitin1.includes(3)) // true
 console.log(nitin1.indexOf(2)) // 1
 
@@ -186,6 +201,7 @@ console.log(value) // { name: 'john doe', age: 23, city: 'delhi' } object
 
 // MATHS IN JS
 mathMethods(4.56);
+
 function mathMethods(value) {
 console.log(value); // 4.56
   

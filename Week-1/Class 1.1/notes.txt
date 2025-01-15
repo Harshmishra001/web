@@ -146,7 +146,7 @@ Here’s the same information in Hinglish (a mix of Hindi and English):
 ---
 
 **Question- What are datatypes in JavaScript?**  
-**Answer**- Datatypes wo describe karte hain ki variables kis type ka data store kar sakte hain. JavaScript mein datatypes hain: integer, string, big int, boolean, null, undefined, object, aur symbol.
+**Answer**- Datatypes wo describe karte hain ki variables kis type ka data store kar sakte hain. JavaScript mein datatypes hain: integer, string, big int, boolean, null, undefined, object, aur symbol.     total 8 type hote h 
 
 ---
 
