@@ -1,0 +1,28 @@
+Question- What are hooks in react?
+Answer- In React, hooks are functions that allow functional components to have state and lifecycle features that 
+were previously only available in class components. Hooks were introduced in React 16.8 to enable developers to use 
+state and other React features without writing a class.
+
+
+
+
+Question- What are the advantage of hooks over class based components?
+Answer- Hooks in React offer a simpler and more concise way to manage state and lifecycle events in functional 
+components compared to class-based components. They eliminate the need for complex class syntax, the use of this, 
+and provide a more modular and reusable approach to organizing code. Hooks, such as useState and useEffect, 
+enhance code readability, promote better separation of concerns, and make testing easier. They also align well with 
+functional programming principles, leading to cleaner and more maintainable code. 
+
+
+
+
+Question- What are custom hooks?
+Answer- Hooks that you create yourself, so other people can use them are called custom hooks. A custom hook is 
+effectively a function, but with the following properties - 
+1. Uses another hook internally (useState, useEffect, another custom hook)
+2. Starts with use
+ 
+A few good examples of this can be -
+1. Data fetching hooks
+2. Browser functionality related hooks - useOnlineStatus , useWindowSize, useMousePosition
+3. Performance/Timer based - useInterval, useDebounce
