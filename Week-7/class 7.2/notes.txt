@@ -1,0 +1,5 @@
+sbse phle context api ka jsx ka pura code copy kra or context.jsx bhi, fir uske terminal m npm install recoil likh k entr kra....
+fir ek store folder bnaya usme atoms folder bnaya usne count.jsx file bnayi
+
+
+or fr context api ka pre code ko modify kia statevariable cout ,setcount uda diye or bht chnges kiye,,

@@ -1,0 +1,64 @@
+sbse phle class 7.1 ka rerminal open kia fr usme npm create vite@latest kia fir project ka naam routing dia fir react framework select kia or fir javascript select kia fir cd routing likha entr kia toh hum apne project m aagye fir npm install kia fir npm install react-router-dom likh kr entr kia  3 file m ye same command likh k entr krenge (router-1, router-2,lazy-loading in teeno m ) fir 
+simple remove kia src m jaake saari css file or jsx file bhi or fir jsx file m apna content related to routing likha
+fir humne src folder m component ka folder bnaya ek or usme dasboard.jsx or landing.jsx file bnayi..
+fir app.jsx ka trmnl khol k npm run dev krke check kr lia server apna..
+
+
+
+
+
+humne inme s kaai folder k src m component ka folder bnaya hai or usme dashboard or landing file bnayi hai bs context- api folder m humne src m hi file bna li context.jsx ki ...
+
+
+
+Question- What is single page application?
+Answer- A Single Page Application (SPA) is a type of web application where, after the initial page load, all 
+interactions and changes happen within that same page. Instead of loading new pages from the server each time you 
+click a link or perform an action, the SPA uses JavaScript to dynamically update the content on the current page. 
+
+
+
+
+Question- What is client side bundling?
+Answer- Client-side bundling refers to the process of combining multiple JavaScript, CSS, or other resource files 
+into a single file (or a few files) that is sent to the client's browser. This is done to optimize the loading time 
+and performance of web applications. By bundling resources together, you reduce the number of HTTP requests the 
+browser has to make, which can lead to faster page load times and improved user experience.
+
+
+
+
+Question- What is client side routing?
+Answer- Client-side routing is a feature of Single Page Applications (SPAs) that allows for dynamic content updates 
+without full page reloads. When the URL changes, the client-side router intercepts the change, determines the 
+appropriate content or view to display, and updates the page content dynamically within the same HTML page. This 
+process ensures a smoother and faster user experience by managing navigation and rendering on the client side.
+
+
+
+
+Question- What is react-router-dom?
+Answer- In React, routing is achieved using the React Router DOM library, which provides a set of components for 
+handling navigation within a React application. The main components involved in React Router DOM are BrowserRouter, 
+Routes, and Route. 
+
+1. BrowserRouter: The BrowserRouter component is a top-level component that should be used to wrap your entire 
+application. It enables the use of routing features throughout your React application. It utilizes the HTML5 History
+API to manipulate the URL without triggering full page reloads.
+
+2. Routes: The Routes component is used to define the routes for your application. Inside the Routes component, you 
+specify individual Route components for each route in your application. The Routes component can contain multiple 
+Route components, each representing a different view or page.
+
+3. Route: The Route component is responsible for rendering specific components based on the current URL path. It 
+takes two main props: path and element. The path prop defines the URL path that should match for the route to be 
+rendered, and the element prop specifies the component to render when the path matches.
+
+
+
+
+4. why do u use context api?
+=> option (1)-> To make rendering more performing =>  (No)
+=> option (2)-> To make syntax cleaner and get rid of prop drilling =>  (Yes)
+
+BUT State Management library fixes both option . thats why we use state management library that is Recoil.
