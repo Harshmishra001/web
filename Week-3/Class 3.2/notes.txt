@@ -39,10 +39,133 @@ information being transmitted, and a signature to ensure the token hasn't been t
 
 Eg- eyJhbGciOiAiSFMyNTYiLCAidHlwIjoiSldUIn0.eyJ1c2VybmFtZSI6ICJqhuX2RvZSJ9.kP1T-2cM-m71l89K8AGjyXJbSOmc3r3mJzUKm-Vs
 1. Header: eyJhbGciOiAiSFMyNTYiLCAidHlwIjoiSldUIn0 (base64Url-encoded JSON { "alg": "HS256", "typ": "JWT" })
+
+The full form of HS256 is Hash-based Message Authentication Code. It uses the SHA-256 hashing algorithm for generating and verifying JWT tokens securely.
+
 2. Payload: eyJ1c2VybmFtZSI6ICJqb2huX2RvZSJ9 (base64Url-encoded JSON { "username": "john_doe" })
 3. Signature: kP1T-2cM-m71l89K8Ad6iGjyXJbSOmc3r3mJzUKm-Vs (base64Url-encoded signature created using the header, 
 payload, and secret key)
 
+Hashing:
+What it is: A one-way process to convert data (like passwords) into a fixed, scrambled string.
+Purpose: To store data securely. Even if someone sees the hash, they can't easily reverse it to get the original data.
+Example:
+Password: mypassword
+Hash: 5f4dcc3b5aa765d61d8327deb882cf99
+        
+ Encryption:
+What it is: A two-way process to convert data into a secret format (scrambled) so that only authorized people can read it by decrypting.
+Purpose: To protect data in transit (e.g., messages or sensitive info).
+Example:
+Plain text: hello
+Encrypted: Hdk92@js7
+Decrypted back: hello                                or
+
+**JWT (JSON Web Token)** ke baare mein sabhi related information Hinglish mein:
+
+---
+
+### **What is JWT?**
+JWT ek compact, URL-safe token hota hai jo authentication aur information exchange ke liye use hota hai. Yeh token usually web applications mein user ko authenticate karne ke liye use hota hai. JWT 3 parts mein divide hota hai:  
+1. **Header**  
+2. **Payload**  
+3. **Signature**
+
+---
+
+### **JWT Structure:**
+JWT ek string hoti hai jo 3 parts se banayi jaati hai, separated by periods (`.`):
+
+1. **Header**:  
+   - Header usually JWT ka type (`JWT`) aur signing algorithm (`HS256`, `RS256`, etc.) ko specify karta hai.
+   - Example: `{"alg": "HS256", "typ": "JWT"}`
+
+2. **Payload**:  
+   - Payload mein claims hote hain. Claims wo information hoti hai jo aap token mein store karte hain. Yeh kuch predefined hoti hain jaise `sub`, `exp`, `iat`, ya custom claims bhi ho sakte hain.
+   - Example: `{"sub": "1234567890", "name": "John Doe", "iat": 1516239022}`
+
+3. **Signature**:  
+   - Signature ko validate karne ke liye header aur payload ko encode kar ke ek secret key ya private key ke saath sign kiya jaata hai. Isse ensure hota hai ki token modify nahi kiya gaya hai.
+   - Signature ka format:  
+   `HMACSHA256( base64UrlEncode(header) + "." + base64UrlEncode(payload), secret)`
+
+---
+
+### **JWT ka Use Case:**
+JWT ko mainly **authentication** aur **authorization** ke liye use kiya jata hai:
+- **Authentication**: Jab user login karta hai, server JWT token generate karta hai aur client ko send karta hai. Client har subsequent request mein is token ko send karta hai (usually HTTP headers mein), aur server token ko verify karke request ko process karta hai.
+- **Authorization**: JWT mein `exp` claim hota hai jo token ke expiry ko define karta hai. Token ek fixed time period ke baad expire ho jata hai, uske baad user ko dobara se login karna padta hai.
+
+
+---
+
+### **JWT Example:**
+
+**Header**:
+```json
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+```
+
+**Payload**:
+```json
+{
+  "sub": "1234567890",
+  "name": "John Doe",
+  "iat": 1516239022
+}
+```
+
+**Signature**:
+- HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret)
+
+Final JWT will look like:
+```
+eyJhbGciOiAiSFMyNTYiLCJ0eXAiOiAiSlMiIH0.eyJzdWIiOiAiMTIzNDU2Nzg5MCIsIm5hbWUiOiAiSm9obiBEb2UiLCJpYXQiOiAxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+```
+
+---
+
+### **JWT Security:**
+- **Signing**: JWT ko sign kiya jata hai taaki data tampered na ho. Secret key ya private key se sign karte hain.
+- **Encryption**: Agar token mein sensitive data hai, toh JWT ko encrypt kiya ja sakta hai.
+
+---
+
+### **JWT vs Sessions:**
+- **Sessions**: Server-side pe store hote hain, aur client ko session ID store karna padta hai.
+- **JWT**: Client-side pe store hota hai aur server ko session manage karne ki zarurat nahi hoti.
+
+---
+
+**JWT ka Use** authentication aur secure data transfer ke liye hai, aur aapko sirf secret key ko safely store karna hota hai taaki JWT tampered na ho. 
+
+Let me know if you need more details!
+
+
+**Cryptographic Algorithm** ka matlab hai ek mathematical process jo data ko encrypt (secure) aur decrypt (accessible) karne ke liye use hota hai.
+
+### Types:
+1. **Symmetric Key (Secret Key)**:
+   - Same key use hoti hai encryption aur decryption ke liye. 
+   - Example: **AES**, **DES**.
+   
+2. **Asymmetric Key (Public/Private Key)**:
+   - Do keys: Public (share ki ja sakti hai) aur Private (sirf receiver ke paas).
+   - Example: **RSA**, **ECC**.
+
+3. **Hash Functions**:
+   - Data ko fixed length string mein convert karta hai, jisse original data recover nahi kiya ja sakta.
+   - Example: **SHA-256**, **MD5**.
+
+### Uses:
+- **Data Encryption**: Sensitive data ko secure rakhna.
+- **Digital Signatures**: Document ki authenticity check karna.
+- **Data Integrity**: Ensure karna ki data modify na ho.
+  
+**Importance**: Cryptographic algorithms ensure karte hain ki data secure, private aur authentic rahe.
 
 
 

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const mongodb=require("mongodb")
-
-mongoose.connect("mongodb+srv://mohit:LNOfIPta7WSxrNEE@cluster0.ievjznx.mongodb.net/class2")
+// mongodb+srv://mohit:LNOfIPta7WSxrNEE@cluster0.ievjznx.mongodb.net/class2
+mongoose.connect("mongodb+srv://uberdb:ZHB0u4iWkGuUcZBf@harsh.rsb9u.mongodb.net/harshdb")
  //class naam s bna dia h db apna humne
   .then(() => console.log("CONNECTION OPEN"))
   .catch((err) => console.log(err));
